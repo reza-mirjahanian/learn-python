@@ -8,7 +8,7 @@ class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
 
         def bst(root, min_val=float('-inf'), max_val=float('inf')):
-            if None == root:
+            if root is None:
                 return True
 
             if not (min_val < root.val < max_val):
